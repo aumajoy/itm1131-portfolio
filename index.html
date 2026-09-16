@@ -4,44 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
-    <style>
-        table, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td{
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div>My Profile</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Interests</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>My First Website</h1>
         <p>Welcome to my first website.</p>
     <nav>
+    
         <a href="#Course-Modules">My Course Modules</a> |
         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">More About Me</a>
     </nav>
     </header>
+
+<hr>
+
     <main>
-        <section>
+        <section class="card">
             <h2>About Me</h2>
             <img src="Images/1767441268234-1.jpg" alt="Auma Joy's profile photo" style="max-width:25%; height:auto;">
+            
+            <div class=card>
+
             <p>My name is Auma Joy. I am passionate about web development and programming.
-                i enjoy learning how computers work and developing my skills in different areas of Technology.
+                i  enjoy learning how computers work and developing my skills in different areas of Technology.
             </p>
+            </div>
         </section>
-        <section>
+
+<hr>
+
+        <section class="card">
             <h2>My Interests and goals</h2>
            <p>I am interested in web development, programming, and technology in general. 
             My goal is to become a skilled web developer.</p>
         
         <img src="Images/iMG_20260425_184235_469.jpg" alt="Auma Joy's Professional profile photo" style="max-width:25%; height:auto;">
-     
+           </div>
     </section>
+
+<hr>
+<section class="gallery-section">
+<h2>My Projects and Interests</h2>
+<div class="grid-gallery">
+    <div class="grid-item">Project 1</div>
+    <div class="grid-item">Project 2</div>
+    <div class="grid-item">Project 3</div>
+    <div class="grid-item">Project 4</div>
+    <div class="grid-item">Project 5</div>
+    <div class="grid-item">Project 6</div>
+</div>
+</section>
+<hr>
+
         <section id="Course-Modules">
             <h2>My Favorite Course Modules</h2>
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
     
@@ -67,8 +94,26 @@
             </table>
         </section>
     </main>
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Contact Me</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" required>
+        
+             <label for="email">Email</label>
+             <input type="email" id="email" name="user_email" required>
+             
+             <label for="msg">Message</label>
+               <textarea id="msg" name="user_message" required minlength="10"></textarea>     
+
+               <button
+               type="submit">Send</button>
+            </fieldset>     
+    </form>
     <footer>
         <p>&copy; 2026 Auma Joy. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html

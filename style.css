@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  color: blue;
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2;
+  color: black;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1;
+  margin-bottom: 10px;
+}
+.card {
+  background-color: rgb(156, 97, 97);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(rgb(238, 141, 141), green, blue, alpha);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(101, 122, 122);
+  color: white;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav-link a {
+  color: white;
+  text-decoration: none;
+}
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.grid-item {
+  background-color: rgb(160, 156, 163);
+  border: 1px solid #ddd;
+  padding: 40px, 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+@media (max-width: 768) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
