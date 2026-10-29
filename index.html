@@ -3,117 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div>My Profile</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Interests</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>My First Website</h1>
-        <p>Welcome to my first website.</p>
-    <nav>
+    <title>Auma Joy | My Portfolio</title>
     
-        <a href="#Course-Modules">My Course Modules</a> |
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">More About Me</a>
-    </nav>
-    </header>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<hr>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <img src="Images/1767441268234-1.jpg" alt="Auma Joy's profile photo" style="max-width:25%; height:auto;">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="dark-mode">
+
+    <header class="header">
+        <nav class="portfolio-nav navbar navbar-expand-lg border-bottom">
+          <div class="container">
+            <a class="navbar-brand fontt-weight-bold" href="#home">Joy's portfolio</a>
             
-            <div class=card>
 
-            <p>My name is Auma Joy. I am passionate about web development and programming.
-                i  enjoy learning how computers work and developing my skills in different areas of Technology.
-            </p>
+                <button class="menu-toggle-btn" id="menuToggle" aria-label="Toggle navigation"
+                <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+           
+            <div class="nav-menu" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+          
+                <button type="button" id="themeToggle"  class="theme-toggle-btn ms-lg-3" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+          </div>
+        </div>
+    </nav> 
+    
+     <div class="hero-banner text-center py-5">
+         <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to My World</h1>
+            <p class="lead">Joy Here. Passionate about Web Development & Technology!</p>
+            <div class="hero-links mt-3">
+        <a href="#Course-Modules" class="btn btn-outline-primary btn-sm me-2">My Course Modules</a>></a> |
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">More About Me<i class="fa-brands fa-linkedin ms-1"></i></a>
+    </div>
+</div>
+</div>
+</header>
+
+    <main class="container my-5">
+ <section id="about" class="profile-card mb-5 p-4 rounded-4 shadow-sm" id="profile-card">
+    <div class="row align-items-center"></div>
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="Images/1767441268234-1.jpg" alt="Auma Joy's profile photo" 
+            style="max-width:160px; height:160px;" class="profile-photo mb-3">
+        </div>
+        <div class="col-md-8">
+            <h2 class="mb-3">About Me</h2>
+            <p class="lead-text">Hello! My name is <strong>Auma Joy</strong></p>
+            <p>I am deeply passionate about web development and programming. I enjoy learning how computers work under the hood and developing my skills across diverse technical domains to build engaging digital experiences.</p>
+
+        </div>
+    </div>
+</section>
+    
+ <section class="profile-card mb-5 p-4 rounded-4 shadow-sm" id="interests">
+            <h2 class="section-title">My Interests and goals</h2>
+           <p>I am focused on web development, programming, and core technological infrastructure.  My primary professional goal is to become a highly skilled full-stack web developer capable of solving real-world challenges through code.</p>
+        </section>
+        
+
+<section class="gallery-section mb-5" id="projects">
+<div class="container" my-5>
+<h2 class="text-center mb-4 section-title">My Projects and Interests</h2>
+    <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                        <span class="badge bg-primary mb-2">Web App</span>    
+                            <h3 class="card-title h5">Project 1</h3>
+                            <p class="card-text">A responsive web application demonstrating dynamic DOM interaction and UI component state management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <span class="badge bg-success mb-2">Discrete Mathematics</span>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Project 2</h3>
+                            <p class="card-text">A project focused on discrete mathematics and its applications in computer science.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <span class="badge bg-info mb-2">Web Development</span>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Project 3</h3>
+                            <p class="card-text">A web development project demonstrating modern web development practices.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-<hr>
 
-        <section class="card">
-            <h2>My Interests and goals</h2>
-           <p>I am interested in web development, programming, and technology in general. 
-            My goal is to become a skilled web developer.</p>
-        
-        <img src="Images/iMG_20260425_184235_469.jpg" alt="Auma Joy's Professional profile photo" style="max-width:25%; height:auto;">
-           </div>
-    </section>
-
-<hr>
-<section class="gallery-section">
-<h2>My Projects and Interests</h2>
-<div class="grid-gallery">
-    <div class="grid-item">Project 1</div>
-    <div class="grid-item">Project 2</div>
-    <div class="grid-item">Project 3</div>
-    <div class="grid-item">Project 4</div>
-    <div class="grid-item">Project 5</div>
-    <div class="grid-item">Project 6</div>
-</div>
-</section>
-<hr>
-
-        <section id="Course-Modules">
-            <h2>My Favorite Course Modules</h2>
-            <table border="1">
+        <section id="Course-Modules" class="mb-5p-4 profile-card rounded-4 shadow-sm">
+            <h2 class="section-title mb-3">My Favorite Course Modules</h2>
+            <div class="table-responsive">
+            <table class="table table-hover align-middle">
                 <thead>
                     <tr>
     
-                        <th>Module Name</th>
-                        <th>Why i choose it</th>
+                        <th scope="col">Module Name</th>
+                        <th scope="col">Why I Choose It</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Discrete Mathematics</td>
-                        <td>it builds the essential logical and mathematical foundaton needed</td>
+                        <td class="fw-bold">Discrete Mathematics</td>
+                        <td>Builds essential logical and mathematical foundaton needed</td>
                     </tr>
                     <tr>
-                        <td>Foundations of Information Systems</td>
+                        <td class="fw-bold">Foundations of Information Systems</td>
                         <td>it helps me to understand how to data, technology and organisational processes interract globally</td>
                         
                     </tr>
                 <tr>
-                    <td>Web application Development</td>
+                    <td class="fw-bold">Web application Development</td>
                         <td>it teaches me the direct, practical programming skills required to design and build dynamic web platforms.</td>
                 </tr>
                 </tbody>
             </table>
+            </div>
         </section>
     </main>
-    <hr>
+    
+<main>
+<section id="contact" class="mb-5">
+  <div class="row g-4">
 
-    <form>
-        <fieldset>
-            <legend>Contact Me</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="user_name" required>
-        
-             <label for="email">Email</label>
-             <input type="email" id="email" name="user_email" required>
-             
-             <label for="msg">Message</label>
-               <textarea id="msg" name="user_message" required minlength="10"></textarea>     
+    <div class="col-lg-7">
+        <div class="profile-card p-4 rounded-4 shadow-sm h-100">
+            <h2 class="section-title mb-3">Contact Me</h2>
+              <form class="contact-form" id="contactForm">
+<div class="mb-3">
+   <label for="name" class="form-label">Name</label>
+   <input type="text" class="form-control" id="name" name="user_name" required placeholder="Your full name">
+ </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="user_email" required placeholder="name@example.com">
+     </div>
+    <div class="mb-3">
+        <label for="msg" class="form-label">Message</label>
+        <textarea class="form-control" id="msg" name="user_message" rows="4" required minlength="10" placeholder="Type your message here..."></textarea>
+                                <!-- Character Count Feedback (Worksheet Task #2) -->
+        <div class="d-flex justify-content-between mt-1">
+             <small id="charCount" class="text-muted">0 characters typed</small>
+             <small id="minReq" class="text-danger d-none">Minimum 10 characters required.</small>
+        </div>
+     </div>
+       <button type="submit" class="btn btn-primary w-100">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+</main>
 
-               <button
-               type="submit">Send</button>
-            </fieldset>     
-    </form>
-    <footer>
-        <p>&copy; 2026 Auma Joy. All rights reserved.</p>
+<main>
+    <section class="login-section mb-5">
+        <div class="row g-4 justify-content-center">
+ <div class="col-lg-5">
+                    <div class="login-card p-4 rounded-4 shadow-sm h-100">
+                        <h2 class="section-title mb-3">User Portal</h2>
+                        <form class="login-form">
+                            <div class="mb-3">
+                                <label class="form-label">Username</label>
+                                <input type="text" class="form-control" placeholder="Enter username" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Enter password" required>
+                            </div>
+                            <button type="submit" class="btn btn-outline-light w-100 mt-2">Login</button>
+                            <p class="signup-text text-center mt-3">
+                                Don't have an account? <a href="#" class="text-primary fw-bold">Sign up</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Auma Joy. All rights reserved.</p>
+        </div>
     </footer>
+
+<script src="script.js"></script>
 </body>
-</html
+</html>
