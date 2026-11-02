@@ -25,14 +25,13 @@
                 <i class="fa-solid fa-bars"></i>
                 </button>
 
-
-           
             <div class="nav-menu" id="navMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
                 </ul>
           
                 <button type="button" id="themeToggle"  class="theme-toggle-btn ms-lg-3" title="Toggle Light/Dark Theme">
@@ -160,14 +159,14 @@
      </div>
     <div class="mb-3">
         <label for="msg" class="form-label">Message</label>
-        <textarea class="form-control" id="msg" name="user_message" rows="4" required minlength="10" placeholder="Type your message here..."></textarea>
-                                <!-- Character Count Feedback (Worksheet Task #2) -->
+        <textarea class="form-control" id="message" name="user_message" rows="4" required minlength="10" placeholder="Type your message here..."></textarea>
+                            
         <div class="d-flex justify-content-between mt-1">
-             <small id="charCount" class="text-muted">0 characters typed</small>
+             <small id="char-count" class="text-muted">0 characters typed</small>
              <small id="minReq" class="text-danger d-none">Minimum 10 characters required.</small>
         </div>
      </div>
-       <button type="submit" class="btn btn-primary w-100">Send Message</button>
+       <button type="button" class="btn btn-primary w-100">Send Message</button>
 </form>
 </div>
 </div>
@@ -175,7 +174,7 @@
 </main>
 
 <main>
-    <section class="login-section mb-5">
+    <section class="login-section mb-5" id="login">
         <div class="row g-4 justify-content-center">
  <div class="col-lg-5">
                     <div class="login-card p-4 rounded-4 shadow-sm h-100">
@@ -183,11 +182,11 @@
                         <form class="login-form">
                             <div class="mb-3">
                                 <label class="form-label">Username</label>
-                                <input type="text" class="form-control" placeholder="Enter username" required>
+                                <input type="text" class="form-control" placeholder="Enter username" required autocomplete="username">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Password</label>
-                                <input type="password" class="form-control" placeholder="Enter password" required>
+                                <input type="password" class="form-control" placeholder="Enter password" required autocomplete="current-password">
                             </div>
                             <button type="submit" class="btn btn-outline-light w-100 mt-2">Login</button>
                             <p class="signup-text text-center mt-3">
