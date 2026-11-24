@@ -32,4 +32,26 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Live character count updated:", currentLength);
     });
   }
-});
+
+  const listDiv = document.getElementById('modules-list');
+  if (!listDiv) return;
+
+  fetch('modules.json')
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP ${res.status} - file not found`);
+      return res.json();
+    })
+    .then(modules => {
+      let html = '<ul style="list-style:none; padding:0;">';
+      modules.forEach(m => {
+        html += `<li style="padding:8px; border-bottom:1px solid #ddd;"><strong>${m.name}</strong> - ${m.hours} hours</li>`;
+      });
+      html += '</ul>';
+      listDiv.innerHTML = html;
+    })
+
+    .catch(err => {
+      listDiv.innerHTML = `<p style="color:red; background:#ffe0e0; padding:10px; border-radius:5px;">⚠️ Failed to load modules: ${err.message}. Check that modules.json exists.</p>`;
+      console.error('Fetch failed:', err);
+    });
+  });
